@@ -28,3 +28,18 @@ body {
   color: white;
   font-size: 16px;
 }
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
+}
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba (0, 0, 0, 0.6);
+  font-weight: bold;
+}
+a {
+  color: #885df1;
+}
