@@ -31,11 +31,11 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  if (minutes > 10) {
-    minutes = `0 ${minutes}`;
+  if (minutes < 10) {
+    minutes = `00 ${minutes}`;
   }
 
-  return `${day} ${hours}:${minutes}`;
+  return `${day}, ${hours}:${minutes}`;
 }
 
 function searchCity(city) {
