@@ -52,8 +52,8 @@ function handleSearchSubmit(event) {
 }
 
 function displayForecast() {
-  let forecastElement = document.querySelector("#forecast");
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+
   let forecastHtml = "";
 
   days.forEach(function (day) {
@@ -72,11 +72,14 @@ function displayForecast() {
   </div>
 `;
   });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
 }
-forecastElement.innerHTML = forecastHtml;
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
 searchCity("Madrid");
 
 displayForecast();
